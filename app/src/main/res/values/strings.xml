@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">UEFCountingApp</string>
+    <string name="app_explanation">This app uses automatic speech recognition to assess the counting portion of an upper-extremity function dual task.</string>
+    <string name="continue_guide">Tap to continue.</string>
+    <string name="select_guide">Enter participant ID and select an audio upload option</string>
+    <string name="test_guide">Count backwards by 3, starting from 500, while flexing arm at consistent pace</string>
+    <string name="counted">NUMBERS COUNTED: </string>
+    <string name="incorrect">INCORRECT SUBTRACTIONS: </string>
+    <string name="correct">CORRECT SUBTRACTIONS: </string>
+    <string name="alert">Please fill all fields.</string>
+</resources>
