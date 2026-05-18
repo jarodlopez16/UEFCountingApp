@@ -49,8 +49,7 @@ def postProcess(file, subBy=3):
     nums = removeRepeats(nums)
     nums = checkPrefix(nums)
     # Remove tail only used for the purposes of the current paper being written
-    #nums = removeTail(nums)
-    #nums = checkOutliers(nums)
+    # nums = removeTail(nums)
     # Return the list of cleaned numbers
     return nums
 
