@@ -61,6 +61,8 @@ def checkAccuracy(nums, subBy=3):
     omissions = 0
     # Variability tracks how often the number counting by changes
     variability = 0
+    ''' The calculation for these three outcomes are net yet final and were found to have lower ICC values than the
+     total counted, correct subtractions, and incorrect subtractions outcomes. Will need further work '''
 
     # Return default outcomes for participants who counted 1 or less numbers
     if len(nums) <= 1:
