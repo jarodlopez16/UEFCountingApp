@@ -101,6 +101,11 @@ class LiveTestActivity: AppCompatActivity() {
                 try {
                     // If currently recording (pressed to stop test), end audio capture
                     stopRequested = true
+                    runOnUiThread {
+                        testButton!!.text = "Waiting..."
+                        testButton!!.setTextColor(ContextCompat.getColor(this, R.color.white))
+                        testButton!!.isEnabled = false
+                    }
                 } catch (e: IOException) {
                     throw RuntimeException(e)
                 }
