@@ -59,8 +59,8 @@ def run_whisper_and_load(file_path, output_dir="ResultFiles"):
         file_path,
         beam_size=5,    
         language="en",  
-        vad_filter=True
-        #clip_timestamps=[0, 60] ------ For paper, only using the first 60 seconds of data
+        vad_filter=True,
+        clip_timestamps=[0, 60] # For paper, only using the first 60 seconds of data, remove for actual usage of app
     )
 
     # For speech segment/row returned by Whisper, create a dictionary with times and convert any numbers in word form to numeric form
@@ -95,6 +95,8 @@ while True:
     client, addr = server.accept()
     audio_path = "audio.m4a"
 
+    print("Connected")
+
     with open(audio_path, "wb") as f:
         while True:
             chunk = client.recv(4096)
@@ -105,7 +107,7 @@ while True:
     
     # Transcribe the audio file and calculate outcomes with resulting tsv file
     transcriptionFile = run_whisper_and_load(audio_path)
-    response = AppPostProcess1.getStats(transcriptionFile)
+    response = AppPostProcess.getStats(transcriptionFile)
     # Send outcomes back to Android app
     client.sendall(json.dumps(response).encode())
     client.close()

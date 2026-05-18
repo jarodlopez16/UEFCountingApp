@@ -24,6 +24,8 @@ while True:
     client, addr = server.accept()
     tsv_data = b""
 
+    print("Connected")
+
     # Store tsv data and compile it
     while True:
         chunk = client.recv(4096)

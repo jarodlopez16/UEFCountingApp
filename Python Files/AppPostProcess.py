@@ -230,7 +230,7 @@ def checkPrefix(nums):
         # If it is a triple digit number and the hundreds place is equal to the last tracked hundred, append the number
         if (len(str(num)) == 3) and (str(num)[0] * 100 == previousHundred): 
             cleaned.append(num) 
-        # If it is a triple digit number and the hundreds place is different from the last tracked hundred, change the hundreds track and append the numbers
+        # If it is a triple digit number and the hundreds place is different from the last tracked hundred, change the hundreds tracker and append the numbers
         elif (len(str(num)) == 3) and (str(num)[0] * 100 != previousHundred): 
             previousHundred = int(str(num)[0]) * 100 
             cleaned.append(num) 
