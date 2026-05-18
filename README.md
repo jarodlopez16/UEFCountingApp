@@ -4,6 +4,6 @@ Uses Whisper ASR and Python postprocessing functions to automatically transcribe
 Upload prerecorded audio option was most tested. Live transcription works but occasionally skips last 1 or 2 numbers.<br><br>
 Could also improve app performance by using other Whisper versions or models (e.g. Whisper large-v2, -v3, turbo, or other models).
 
-To run:<br>
+Before running:<br>
 pip install faster-whisper<br>
 pip install whisper-live
