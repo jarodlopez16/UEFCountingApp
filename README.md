@@ -5,7 +5,7 @@ Postprocessing functions were derived based on patterns found through listening 
 Upload prerecorded audio option was most tested. Live transcription works but occasionally skips last 1 or 2 numbers, will need to improve on this.<br><br>
 Could also improve app performance by using other Whisper versions or transcription models (e.g. Whisper large-v2, -v3, turbo, or other models).
 
-<h2>Before running:</h2><br><br>
+<h2>Before running:</h2>
 <h3>For Python backend:</h3><br>
 pip install faster-whisper<br>
 pip install whisper-live<br>
