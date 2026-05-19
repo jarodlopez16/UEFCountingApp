@@ -5,6 +5,14 @@ Postprocessing functions were derived based on patterns found through listening 
 Upload prerecorded audio option was most tested. Live transcription works but occasionally skips last 1 or 2 numbers, will need to improve on this.<br><br>
 Could also improve app performance by using other Whisper versions or transcription models (e.g. Whisper large-v2, -v3, turbo, or other models).
 
-Before running:<br>
+Before running:<br><br>
+For Python backend:<br>
 pip install faster-whisper<br>
-pip install whisper-live
+pip install whisper-live<br><br>
+
+For Android device:<br>
+Find IP address of the device/server running Python and add it to network_security_config.xml in /res/xml/ folder
+Build and run app phone<br><br>
+
+When running:<br>
+For prerecorded audio:<br>
