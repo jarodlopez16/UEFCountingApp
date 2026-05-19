@@ -7,7 +7,8 @@
 <h2>Before running:</h2>
 <h3>For Python backend:</h3>
 <ul><li>pip install faster-whisper</li>
-<li>pip install whisper-live</li></ul>
+<li>pip install whisper-live</li>
+<li>pip install -U openai-whisper</li></ul>
 
 <h3>For Android device:</h3>
 <ul><lI>Find IP address of the computer/server running Python and add it to network_security_config.xml in /res/xml/ folder in Android Studio</lI>
