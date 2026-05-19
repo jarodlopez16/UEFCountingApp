@@ -8,11 +8,19 @@ Could also improve app performance by using other Whisper versions or transcript
 Before running:<br><br>
 For Python backend:<br>
 pip install faster-whisper<br>
-pip install whisper-live<br><br>
+pip install whisper-live<br>
 
 For Android device:<br>
-Find IP address of the device/server running Python and add it to network_security_config.xml in /res/xml/ folder
-Build and run app phone<br><br>
+Find IP address of the device/server running Python and add it to network_security_config.xml in /res/xml/ folder<br>
+Build and run app phone<br>
 
 When running:<br>
 For prerecorded audio:<br>
+1. Navigate to test page of app<br>
+2. Run AppPrerecordedTranscription.py on device/server for Python<br>
+3. Input device/server IP address and participant ID in app input fields and select 'Upload Audio'<br>
+4. Select audio file for upload<br>
+5. Audio file will be sent to Python backend to be automatically transcribed and checked for outcomes<br>
+6. Outcomes will be sent back to the phone and displayed on its screen<br>
+
+For live test:<br>
