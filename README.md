@@ -6,16 +6,16 @@ Upload prerecorded audio option was most tested. Live transcription works but oc
 Could also improve app performance by using other Whisper versions or transcription models (e.g. Whisper large-v2, -v3, turbo, or other models).
 
 <h2>Before running:</h2>
-<h3>For Python backend:</h3><br>
+<h3>For Python backend:</h3>
 pip install faster-whisper<br>
 pip install whisper-live<br>
 
-<h3>For Android device:</h3><br>
+<h3>For Android device:</h3>
 Find IP address of the device/server running Python and add it to network_security_config.xml in /res/xml/ folder<br>
 Build and run app phone<br>
 
-<h2>When running:</h2><br>
-<h3>For prerecorded audio:</h3><br>
+<h2>When running:</h2>
+<h3>For prerecorded audio:</h3>
 1. Navigate to test page of app<br>
 2. Run AppPrerecordedTranscription.py on device/server for Python<br>
 3. Input device/server IP address and participant ID in app input fields and select 'Upload Audio'<br>
