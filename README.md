@@ -1,9 +1,8 @@
 <h2>UEF Dual-Task Counting App</h2>
-
-Uses a large Whisper ASR model and Python postprocessing functions to automatically transcribe prerecorded/live audio of UEF dual-task and then extract outcomes. Android App coded in Kotlin and backend coded in Python. Communication between Python and Kotlin ends happens through TCP server on local computer. In future work, will need to update to run on cloud. <br><br>
-Postprocessing functions were derived based on patterns found through listening to counting trials or by examining patterns in transcription.<br><br>
-Upload prerecorded audio option was most tested. Live transcription works but occasionally skips last 1 or 2 numbers, will need to improve on this.<br><br>
-Could also improve app performance by using other Whisper versions or transcription models (e.g. Whisper large-v2, -v3, turbo, or other models).
+<ul><li>Uses a large Whisper ASR model and Python postprocessing functions to automatically transcribe prerecorded/live audio of UEF dual-task and then extract outcomes. Android App coded in Kotlin and backend coded in Python. Communication between Python and Kotlin ends happens through TCP server on local computer. In future work, will need to update to run on cloud.</li>
+<li>Postprocessing functions were derived based on patterns found through listening to counting trials or by examining patterns in transcription.</li>
+<li>Upload prerecorded audio option was most tested. Live transcription works but occasionally skips last 1 or 2 numbers, will need to improve on this.</li>
+<li>Could also improve app performance by using other Whisper versions or transcription models (e.g. Whisper large-v2, -v3, turbo, or other models).</li></ul>
 
 <h2>Before running:</h2>
 <h3>For Python backend:</h3>
@@ -11,8 +10,8 @@ Could also improve app performance by using other Whisper versions or transcript
 <li>pip install whisper-live</li></ul>
 
 <h3>For Android device:</h3>
-Find IP address of the device/server running Python and add it to network_security_config.xml in /res/xml/ folder<br>
-Build and run app phone<br>
+<ul><lI>Find IP address of the device/server running Python and add it to network_security_config.xml in /res/xml/ folder</lI>
+<li>Build and run app phone</li></ul>
 
 <h2>While running:</h2>
 <h3>For prerecorded audio:</h3>
