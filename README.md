@@ -7,8 +7,8 @@ Could also improve app performance by using other Whisper versions or transcript
 
 <h2>Before running:</h2>
 <h3>For Python backend:</h3>
-pip install faster-whisper<br>
-pip install whisper-live<br>
+<ul><li>pip install faster-whisper</li>
+<li>pip install whisper-live</li></ul>
 
 <h3>For Android device:</h3>
 Find IP address of the device/server running Python and add it to network_security_config.xml in /res/xml/ folder<br>
