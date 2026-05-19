@@ -14,7 +14,7 @@ pip install whisper-live<br>
 Find IP address of the device/server running Python and add it to network_security_config.xml in /res/xml/ folder<br>
 Build and run app phone<br>
 
-<h2>When running:</h2>
+<h2>While running:</h2>
 <h3>For prerecorded audio:</h3>
 1. Navigate to test page of app<br>
 2. Run AppPrerecordedTranscription.py on device/server for Python<br>
@@ -22,5 +22,14 @@ Build and run app phone<br>
 4. Select audio file for upload<br>
 5. Audio file will be sent to Python backend to be automatically transcribed and checked for outcomes<br>
 6. Outcomes will be sent back to the phone and displayed on its screen<br>
+7. Results will be added to a result.csv file in app's storage directory<br>
 
-For live test:<br>
+<h3>For live test:</h3>
+1. Navigate to test page of app<br>
+2. Input device/server IP address and participant ID in app input fields and select 'Live Test'<br>
+3. Run AppLiveTranscriptionServer.py and AppLivePostprocessing.py on device/server for Python<br>
+4. When ready to begin UEF dual-task, press 'Begin Test' and speak into phone's microphone<br>
+5. To end test, press 'Stop Test'
+6. Audio send to Python backend during test will be automatically transcribed and checked for outcomes<br>
+7. Outcomes will be sent back to the phone and displayed on its screen<br>
+8. Results will be added to a result.csv file in app's storage directory
